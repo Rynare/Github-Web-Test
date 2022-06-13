@@ -1,0 +1,23 @@
+@media only screen and (min-width: 768.1px) {
+    .home-wrapper {
+        width: 50%;
+        margin: auto;
+    }
+
+    .home-wrapper nav {
+        justify-content: space-evenly;
+    }
+
+    .about-me-wrapper {
+        width: 70%;
+        margin: auto;
+    }
+
+    .about-me-wrapper nav {
+        justify-content: center;
+    }
+
+    .about-me-wrapper nav a {
+        margin: 0 20px;
+    }
+}

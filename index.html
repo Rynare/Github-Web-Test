@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Content">
+    <meta name="author" content="M. Fahim David Bachtiar">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://kit.fontawesome.com/ef3f895959.js" crossorigin="anonymous"></script>
+    <title>Content</title>
+</head>
+
+<body onresize="toTheTop()">
+    <div class="kurang">
+        <p>Your Browser Height is too Short</p>
+    </div>
+    <div class="cover">
+        <div class="paper">
+            <div class="container">
+                <div class="home-wrapper" id="home">
+                    <div class="home">
+                        <nav>
+                            <a href="#home" class="active">
+                                <div class="navbar_items"><i class="fa-solid fa-house"></i></div>
+                            </a>
+                            <a href="#about">
+                                <div class="navbar_items"><i class="fa-solid fa-address-card"></i></div>
+                            </a>
+                            <a href="#content">
+                                <div class="navbar_items"><i class="fa-solid fa-film"></i></div>
+                            </a>
+                            <a href="#contact">
+                                <div class="navbar_items"><i class="fa-solid fa-comment-dots"></i></div>
+                            </a>
+                        </nav>
+                        <div class="short_article">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="about-me-wrapper column" id="about">
+                    <div class="about-wrap">
+                        <div class="about_me"></div>
+                        <br>
+                        <nav>
+                            <a href="#home">
+                                <div class="navbar_items"><i class="fa-solid fa-house"></i></div>
+                            </a>
+                            <a href="#about" class="active">
+                                <div class="navbar_items"><i class="fa-solid fa-address-card"></i></div>
+                            </a>
+                            <a href="#content">
+                                <div class="navbar_items"><i class="fa-solid fa-film"></i></div>
+                            </a>
+                            <a href="#contact">
+                                <div class="navbar_items"><i class="fa-solid fa-comment-dots"></i></div>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="content-wrapper" id="content">
+                    <div class="content_wrapper">
+                        <nav>
+                            <a href="#home">
+                                <div class="navbar_items"><i class="fa-solid fa-house"></i></div>
+                            </a>
+                            <a href="#about">
+                                <div class="navbar_items"><i class="fa-solid fa-address-card"></i></div>
+                            </a>
+                            <a href="#content" class="active">
+                                <div class="navbar_items"><i class="fa-solid fa-film"></i></div>
+                            </a>
+                            <a href="#contact">
+                                <div class="navbar_items"><i class="fa-solid fa-comment-dots"></i></div>
+                            </a>
+                        </nav>
+                        <div class="content">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="contact-wrapper" id="contact">
+                    <div class="contact-wrap">
+                        <nav>
+                            <a href="#home">
+                                <div class="navbar_items"><i class="fa-solid fa-house"></i></div>
+                            </a>
+                            <a href="#about">
+                                <div class="navbar_items"><i class="fa-solid fa-address-card"></i></div>
+                            </a>
+                            <a href="#content">
+                                <div class="navbar_items"><i class="fa-solid fa-film"></i></div>
+                            </a>
+                            <a href="#contact" class="active">
+                                <div class="navbar_items"><i class="fa-solid fa-comment-dots"></i></div>
+                            </a>
+                        </nav>
+                        <div class="contact">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const arra = ["short_article", "about_me", "content", "contact"]
+
+        arra.forEach(item => {
+            var ganti = document.getElementsByClassName(item)[0]
+            fetch("./html/" + item + ".html")
+                .then(raw => raw.text())
+                .then(ready => ganti.innerHTML = ready)
+        });
+    </script>
+    <script type="module">
+        let content_src = document.createElement("script")
+        content_src.src = "script/script.js"
+        document.body.appendChild(content_src)
+    </script>
+</body>
+
+</html>
