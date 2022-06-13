@@ -35,8 +35,8 @@ body {
     min-width: 100%;
     min-height: 100vh;
     color: white;
-    /* scroll-behavior: smooth; */
-    /* overflow: hidden; */
+    scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 a {
@@ -249,6 +249,7 @@ nav a:hover {
 .anime_image img {
     border-radius: var(---b-rad-20px);
     width: 100%;
+    height: auto;
 }
 
 #prev {

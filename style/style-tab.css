@@ -66,4 +66,9 @@
     .container #prev {
         font-size: 3rem;
     }
+
+    .container .anime_image img {
+        width: auto;
+        height: 95vh;
+    }
 }
