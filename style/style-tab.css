@@ -5,8 +5,9 @@
         border-radius: 20px;
     }
 
-    .home {
+    .container .home {
         flex-direction: column;
+        max-width: 500px;
     }
 
     .home-wrapper .home nav {
@@ -70,27 +71,5 @@
     .container .anime_image img {
         width: auto;
         height: 95vh;
-    }
-
-    .home-wrapper {
-        width: 50%;
-        margin: auto;
-    }
-
-    .home-wrapper nav {
-        justify-content: space-evenly;
-    }
-
-    .about-me-wrapper {
-        width: 70%;
-        margin: auto;
-    }
-
-    .about-me-wrapper nav {
-        justify-content: center;
-    }
-
-    .about-me-wrapper nav a {
-        margin: 0 20px;
     }
 }

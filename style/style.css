@@ -35,7 +35,7 @@ body {
     min-width: 100%;
     min-height: 100vh;
     color: white;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     overflow: hidden;
 }
 
@@ -73,6 +73,11 @@ nav a:hover {
     width: 100%;
     min-height: 100vh;
     display: flex;
+    background-image: url(../source/night_building.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .paper {
@@ -117,16 +122,13 @@ nav a:hover {
     padding: 1rem;
     border-radius: var(---b-rad-20px);
     text-shadow: var(---bold);
-    box-shadow: -7px -7px 7px black inset;
+    box-shadow: 4px 4px 5px black inset;
     transition: ease .5s;
     border: var(---border2px);
 }
 
-.isi:hover {
-    box-shadow: 4px 4px 5px black inset;
-}
-
-.view_more-btn {
+.view_more_container {
+    margin-top: 1rem;
     background-color: var(---grey-bg);
     text-shadow: var(---bold);
     border-radius: var(---b-rad-20px);
@@ -134,10 +136,16 @@ nav a:hover {
     padding: .5rem 1rem;
     box-shadow: var(---3d-inner-shadow-bot);
     border: var(---border2px);
+    font-weight: bold;
 }
 
-.view_more_container {
-    margin-top: 1.5rem;
+.view_more_container:hover {
+    box-shadow: var(---3d-inner-shadow-top);
+}
+
+.fa-arrow-right::before {
+    padding-left: 1rem;
+    font-size: 1.1rem;
 }
 
 .about-me-wrapper {
@@ -246,6 +254,10 @@ nav a:hover {
     margin: auto;
 }
 
+.anime_image:not(:first-of-type) {
+    display: none;
+}
+
 .anime_image img {
     border-radius: var(---b-rad-20px);
     width: 100%;
@@ -329,12 +341,12 @@ nav a:hover {
     justify-content: center;
     padding: 1rem;
     margin-top: 1rem;
-    box-shadow: var(---3d-inner-shadow-top);
+    box-shadow: -6px -6px 5px rgb(32, 31, 31) inset, 2px 2px 5px white inset;
+    transition: ease .5s;
 }
 
-.black-bg {
-    width: fit-content;
-    color: white;
+.contact_wrapper:hover {
+    box-shadow: var(---3d-inner-shadow-top);
 }
 
 .logo-com {
@@ -343,15 +355,11 @@ nav a:hover {
 }
 
 .fa-brands {
-    opacity: .9;
+    opacity: 1;
 }
 
-.fa-whatsapp {
-    text-shadow: none;
-    font-size: 35px;
-    color: rgb(5, 182, 5);
-    text-align: center;
-    text-shadow: 2px 2px 5px black;
+.contact a :hover {
+    transform: scale(1.1, 1.1);
 }
 
 .text-social {
@@ -359,32 +367,40 @@ nav a:hover {
     font-weight: 600;
 }
 
-.menganjai:not(:last-of-type) {
-    margin-bottom: 1rem;
+.black-bg {
+    max-width: 150px;
+    height: 7rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: ease 1s;
 }
 
-.menganjai:hover {
-    transform: scale(1.2, 1.2);
+.fa-whatsapp::before {
+    text-shadow: none;
+    font-size: 2.2rem;
+    color: rgb(5, 182, 5);
+    text-shadow: 2px 2px 5px black;
 }
 
-.fa-facebook-f {
+.fa-facebook-f::before {
     color: white;
     background-color: rgb(59, 89, 152);
     border-radius: 5px;
-    width: 30px;
-    font-size: 25px;
+    padding: .3rem .5rem 0rem .5rem;
+    font-size: 1.5rem;
     text-shadow: none;
     text-align: center;
-    padding-top: 5px;
     box-shadow: 2px 2px 5px black;
+    box-sizing: padding-box;
 }
 
-.igbro {
-    font-size: 30px;
-    width: 30px;
-    border-radius: 8px;
+.igbro::before {
+    font-size: 2rem;
     box-shadow: 2px 2px 5px black;
-    text-align: center;
+    border-radius: 30%;
+    padding: 0 2px;
     color: white;
     text-shadow: none;
     background: linear-gradient(to top right, yellow 0%, yellow 5%, red 45%, #ff1493 60%, #1e90ff 90%);
