@@ -35,9 +35,7 @@
                                 <div class="navbar_items"><i class="fa-solid fa-comment-dots"></i></div>
                             </a>
                         </nav>
-                        <div class="short_article">
-
-                        </div>
+                        <div class="short_article"></div>
                     </div>
                 </div>
             </div>
@@ -81,9 +79,7 @@
                                 <div class="navbar_items"><i class="fa-solid fa-comment-dots"></i></div>
                             </a>
                         </nav>
-                        <div class="content">
-
-                        </div>
+                        <div class="content"></div>
                     </div>
                 </div>
             </div>
@@ -104,32 +100,13 @@
                                 <div class="navbar_items"><i class="fa-solid fa-comment-dots"></i></div>
                             </a>
                         </nav>
-                        <div class="contact">
-
-                        </div>
+                        <div class="contact"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script>
-        const arra = ["short_article", "about_me", "content", "contact"]
-
-        arra.forEach((item, nomer) => {
-            var ganti = document.getElementsByClassName(item)[0]
-            fetch("./html/" + item + ".html").then(raw => raw.text()).then(ready => ganti.innerHTML = ready)
-            if (nomer == (arra.length - 1)) {
-                loadScript()
-            }
-        })
-
-        function loadScript() {
-            let content_src = document.createElement("script")
-            content_src.src = "script/img-slider.js"
-            document.body.appendChild(content_src)
-        }
-    </script>
-    <script src="/script/script.js"></script>
+    <script src="script/script.js"></script>
 </body>
 
 </html>
