@@ -1,20 +1,15 @@
-var ke_n = 0
-
-running()
-
-function running() {
-	const arra = ["short_article", "about_me", "content", "contact"]
-	arra.forEach(item => ambilResource(item))
-}
-
-function ambilResource(source) {
-	var ganti = document.getElementsByClassName(source)[0]
-	fetch("./html/" + source + ".html").then(response => response.text()).then(response => ganti.innerHTML = response)
-}
+document.getElementsByTagName('dialog')[0].style.display = 'flex'
+new short_article().init()
+new about_me().init()
+new content().init()
+new contact().init()
+document.getElementsByTagName('dialog')[0].style.display = 'none'
 
 function toTheTop() {
 	location.href = window.location.href;
 }
+
+var ke_n = 0
 
 function showImage(i) {
 	ke_n += i;
