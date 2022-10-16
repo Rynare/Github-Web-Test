@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+:root {
+	---white-shadow: rgb(152, 147, 147);
+	---black-shadow: rgb(49, 43, 43);
+	---container: #30382c;
+	---dark-body: hsl(0, 0%, 7%);
+}
+
+@media only screen and (min-width: 500px) and (min-height: 515px) {
+	body {
+		padding: 0 0;
+		background-image: url(./source/japan_drone.jpg);
+		background-attachment: fixed;
+		background-position: center;
+		background-color: transparent;
+	}
+
+	.navbar {
+		display: flex;
+		align-items: center;
+	}
+
+	.home_container {
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		color: white;
+		font-weight: bold;
+		padding: 0px 10vw;
+	}
+
+	.navbar_home {
+		justify-content: space-between;
+		max-width: 40%;
+	}
+
+	.navbar_home div:not(:last-child) {
+		margin-right: 10px;
+	}
+
+	.isi {
+		backdrop-filter: blur(20px);
+		border: 2px solid white;
+		max-width: 500px;
+		padding: 10px 20px;
+		margin-top: 10px;
+		border-radius: 20px;
+	}
+
+	.view_more_container {
+		display: flex;
+		align-items: center;
+		margin-left: 5px;
+		margin-top: 10px;
+		backdrop-filter: blur(20px);
+		width: max-content;
+	}
+
+	.view_more_btn {
+		padding: 2px 10px;
+		border: 2px solid white;
+		border-radius: 20px;
+	}
+
+	.about_container {
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		color: white;
+		display: flex;
+		align-items: center;
+		font-weight: bold;
+		padding: 0px 10vw;
+		text-shadow: 2px 2px 4px black;
+	}
+
+	.about_container .about_child {
+		width: 100%;
+		padding: 10px 10px;
+	}
+
+	.about_datadiri .datadiri_fix {
+		width: 100%;
+		display: flex;
+		border-radius: 20px;
+		border: 2px solid white;
+		padding: 10px 5%;
+		backdrop-filter: blur(20px);
+	}
+
+	.about_container .about_skill {
+		display: flex;
+		flex-direction: column;
+		border-radius: 20px;
+		border: 2px solid white;
+		padding: 10px 5%;
+		backdrop-filter: blur(20px);
+		columns: 2;
+	}
+
+	.skill_indicator {
+		width: 100%;
+		border: 2px solid white;
+		border-radius: 50px;
+		font-size: 0.9em;
+	}
+
+	.skill_container:not(:last-child) {
+		margin-bottom: 10px;
+	}
+
+	.navbar_about {
+		padding: 0px 20px;
+		min-width: max-content;
+		width: 60%;
+		justify-content: space-around;
+	}
+
+	.navbar_about div:not(:last-child) {
+		margin-right: 10px;
+	}
+
+	.content_container {
+		position: relative;
+		width: 100%;
+		height: 100vh;
+	}
+
+	.content_navbar {
+		flex-direction: column;
+		margin-right: 20px;
+		margin-bottom: 0;
+	}
+
+	.content_navbar .navbar_items {
+		margin: 10px 0px;
+		justify-content: center;
+	}
+
+	.content_navbar div {
+		margin-right: 0px;
+	}
+
+	.content_child {
+		display: flex;
+		height: 100vh;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.anime_con {
+		display: flex;
+	}
+
+	.anime_container {
+		max-width: 400px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+		position: relative;
+	}
+
+	.anime_image {
+		display: none;
+	}
+
+	*.anime_image .img-round {
+		border-radius: 20px;
+	}
+
+	#prev {
+		position: absolute;
+		color: white;
+		left: 0;
+		cursor: pointer;
+		padding: 16px;
+		font-weight: bold;
+		font-size: 1rem;
+		transition: 0.6s ease;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+	}
+
+	#next {
+		position: absolute;
+		color: white;
+		right: 0;
+		cursor: pointer;
+		padding: 16px;
+		font-weight: bold;
+		font-size: 1rem;
+		transition: 0.6s ease;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+	}
+
+	#prev:hover,
+	#next:hover {
+		background-color: rgba(0, 0, 0, 0.5);
+		border-radius: 10px;
+	}
+
+	.anime_dots {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 2%;
+	}
+
+	.anime_dot {
+		height: 15px;
+		width: 15px;
+		background-color: white;
+		display: inline-block;
+		border-radius: 50%;
+		margin: 5px 0px;
+		transition: background-color 0.6s ease;
+	}
+
+	.active {
+		background-color: black;
+		border: 2px solid white;
+	}
+
+	.fade {
+		animation: fade 1s;
+	}
+
+	@keyframes fade {
+		from {
+			opacity: .4;
+		}
+
+		to {
+			opacity: 1;
+		}
+	}
+
+	.contact_container {
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		color: white;
+		font-weight: bold;
+		padding: 0px 10vw;
+		text-shadow: 2px 2px 4px black;
+	}
+
+	.contact_navbar {
+		margin-bottom: 20px;
+	}
+
+	.social_media {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.social_media div:not(:last-child) {
+		margin-bottom: 20px;
+	}
+}
