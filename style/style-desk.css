@@ -1,0 +1,24 @@
+@media only screen and (max-height: 530px) {
+    div.cover {
+        display: none;
+    }
+
+    body {
+        overflow: hidden;
+    }
+
+    div.kurang {
+        color: aliceblue;
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        font-weight: 600;
+        font-family: var(---montserrat);
+        font-size: 6vw;
+        text-shadow: 0px 1px 0px white, 1px 0px 0px white, 0px -1px 0px white, -1px 0px 0px white;
+        flex-wrap: wrap;
+    }
+}

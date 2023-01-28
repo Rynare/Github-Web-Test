@@ -1,0 +1,90 @@
+@media only screen and (min-width: 550px) {
+    body nav a {
+        width: 5rem;
+        height: 2.5rem;
+        border-radius: 20px;
+    }
+
+    .container .home {
+        flex-direction: column;
+        max-width: 500px;
+    }
+
+    .home-wrapper .home nav {
+        flex-direction: row;
+        order: 1;
+        margin-bottom: 1.5rem;
+    }
+
+    .home .short_article {
+        max-width: 100%;
+        margin: auto;
+        order: 2;
+    }
+
+    .container .about-me-wrapper {
+        width: 90vw;
+    }
+
+    .container .about-wrap {
+        min-width: 300px;
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .container .content-wrapper {
+        width: 90vw;
+        margin: auto;
+    }
+
+    .container .content_wrapper {
+        display: flex;
+        max-width: fit-content;
+        justify-content: center;
+        max-height: fit-content;
+        margin: auto;
+    }
+
+    .content-wrapper nav {
+        flex-direction: column;
+        max-width: fit-content;
+        max-height: 50vh;
+        margin: auto;
+        margin-right: 1.5rem;
+    }
+
+    .content-wrapper nav a:not(:last-of-type) {
+        margin-bottom: 2rem;
+    }
+
+    .contact-wrap {
+        min-width: 300px;
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .container #next,
+    .container #prev {
+        font-size: 3rem;
+    }
+
+    .container .anime_image img {
+        width: auto;
+        height: 95vh;
+    }
+}
+
+dialog {
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-weight: 600;
+    font-family: var(---montserrat);
+    font-size: 6vw;
+    text-shadow: 0px 1px 0px white, 1px 0px 0px white, 0px -1px 0px white, -1px 0px 0px white;
+    flex-wrap: wrap;
+    z-index: 1000;
+    background-color: #303030;
+}
